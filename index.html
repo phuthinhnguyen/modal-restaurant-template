@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="content" onclick="show()">
+        <a href="" class="font">menu</a>
+        <br>
+        <a href="javascript:contactclick();" class="font contact-click">contact</a>
+        <h1 class="font">logo</h1>
+        <div class="foot font">
+            <h2>monday - friday 10-23 | saturday 14-02</h2>
+            <p>42 village St, New York</p>
+            <p>powered by w3.css</p>
+        </div>
+    </div>
+    <div class="contact font">
+        <p class="fs-contact">Contact</p>
+        <span>x</span>
+        <div class="contact-content">
+            <p>Reserve a table, ask for today's special or just send us a message:</p>
+            <input type="text" placeholder="Name">
+            <input type="number" placeholder="How many people">
+            <input type="datetime-local" value="2020-11-16T20:00">
+            <input type="text" placeholder="Message \ Speical requirements">
+            <button type="submit">SEND MESSAGE</button>
+        </div>
+      
+    </div>
+    <script>
+        function contactclick(){
+            $(document).ready(function name(params) {
+                $(".contact").toggle();     
+        })
+        }
+        function show(){
+            $(document).ready(function name(params) {
+                $(".content").show();     
+        })
+        }
+        $(document).ready(function name(params) {
+            $(".contact").children("span").click(function name(params) {
+                $(".contact").hide();
+            })
+        })
+      
+    </script>
+</body>
+</html>
