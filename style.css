@@ -48,6 +48,7 @@
     transform: translate(-50%,-70%); 
     width:900px;
     margin: 0 20px;
+    animation: animation 0.5s;
 }
 @media screen and (max-width:1200px){
     .contact{
@@ -108,3 +109,7 @@
     background-color: lightgray;
     cursor: pointer;
 }
+@keyframes animation {
+    0%{scale: 0;}
+    100%{scale: 1;}
+}   
